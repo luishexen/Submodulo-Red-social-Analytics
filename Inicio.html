@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="script.js"></script>
+		<title>Login del juego</title>
+	</head>
+	<body  style='margin:0px' onload='main()'>
+		<form action="javascript:void(0);" onsubmit="javascript:enviar();">
+			Alias: <input type="label" id="val1" /><br />
+			Clave:<input type="label" id="val2" /><br />
+			Operaci&oacute;n:
+			<select id="operacion">
+				<option value="Jugar">Jugar</option>
+				<option value="Registrar">Registrar</option>
+			</select><br />
+			<input type="submit" value="Aceptar" />
+		</form>
+		<p><span id="resul"></span></p>
+		
+	<canvas id='your_canvas'
+        	style='position: absolute; background-color: black;'></canvas>
+    	<video src="ressources/video.ogv" id="bunny_video" autoplay='true' style='display: none'></video>
+	</body>
+	<script type="text/javascript">
+		var serviceURL = document.URL;
+		function enviar() {
+			var val1 = document.getElementById("val1").value;
+			var val2 = document.getElementById("val2").value;
+			var oper = document.getElementById("operacion").value;
+			
+			var url = serviceURL+"/"+oper+"/"+val1+"/"+val2;
+			var httpRequest = new XMLHttpRequest();
+			httpRequest.onreadystatechange = function() {
+		    	if (httpRequest.readyState === 4){
+		        	var resultado = document.getElementById("resul");
+		        	resultado.innerHTML = httpRequest.responseText;
+		        }
+		    };
+			httpRequest.open("GET", url, true);
+			httpRequest.send(null);
+		}
+	</script>
+</html>
