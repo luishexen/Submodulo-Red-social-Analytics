@@ -16,7 +16,6 @@ this.calcular=function (operacion, val1, val2) {
 		for (var i = 0; i < UsuariosRegistrados; i++) {
     			if (NombreUsuarios[i]==val1 && PassUsuarios[i]==val2) {
       				return "Logueado en el juego";
-				//console.log("caca"+NombreUsuarios[i]+"s");
     			}
 		}
 		return "No existe el usuario";
@@ -61,9 +60,6 @@ var httpServer = http.createServer(
 				var params = uri.split("/");
 				if (params.length >= 3) { //REST Request
 					console.log("Peticion REST: "+uri);
-					//var val1 = parseFloat(params[1]);
-					//var val2 = parseFloat(params[2]);
-					//var result = calcular(params[0], val1, val2);
 					var result = modulo.calcular(params[0], params[1], params[2]);
 					response.writeHead(200, {"Content-Type": "text/html"});
 					response.write(result.toString());
