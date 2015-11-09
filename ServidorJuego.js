@@ -4,6 +4,8 @@ var fs = require("fs");
 var path = require("path");
 var mimeTypes = { "html": "text/html", "jpeg": "image/jpeg", "jpg": "image/jpeg", "png": "image/png", "js": "text/javascript", "css": "text/css", "swf": "application/x-shockwave-flash"};
 
+var modulo = require('./ServidorJuego.js');
+
 //Datos del servidor
 var NombreUsuarios = [];
 var PassUsuarios = [];
@@ -62,7 +64,7 @@ var httpServer = http.createServer(
 					//var val1 = parseFloat(params[1]);
 					//var val2 = parseFloat(params[2]);
 					//var result = calcular(params[0], val1, val2);
-					var result = calcular(params[0], params[1], params[2]);
+					var result = modulo.calcular(params[0], params[1], params[2]);
 					response.writeHead(200, {"Content-Type": "text/html"});
 					response.write(result.toString());
 					response.end();
