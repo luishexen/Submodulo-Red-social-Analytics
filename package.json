@@ -4,7 +4,7 @@
   "description": "Submodulo encargado de la gestion de usuarios y del analisis de datos de estos",
   "main": "ServidorJuego.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -18,9 +18,6 @@
   "license": "GPL-2.0",
   "bugs": {
     "url": "https://github.com/luishexen/Submodulo-Red-social-Analytics/issues"
-  },
-  "scripts": {
-  "test": "mocha"
   },
   "homepage": "https://github.com/luishexen/Submodulo-Red-social-Analytics#readme",
   "devDependencies": {
