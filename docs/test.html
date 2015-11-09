@@ -67,95 +67,28 @@
 
 <span class="hljs-keyword">var</span> modulo = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./ServidorJuego.js'</span>);
 <span class="hljs-keyword">var</span> assert = <span class="hljs-built_in">require</span>(<span class="hljs-string">"assert"</span>);
-<span class="hljs-comment">/*
-</span></pre></div></div>
-            
-        </li>
-        
-        
-        <li id="section-2">
-            <div class="annotation">
-              
-              <div class="pilwrap ">
-                <a class="pilcrow" href="#section-2">&#182;</a>
-              </div>
-              <p>Resultado de la gestión de usuarios no nula</p>
 
-            </div>
-            
-            <div class="content"><div class='highlight'><pre>assert.notEqual(modulo.calcular(<span class="hljs-string">"Jugar"</span>,<span class="hljs-string">"user1"</span>,<span class="hljs-string">"pass1"</span>), <span class="hljs-literal">null</span>);
-assert.notEqual(modulo.calcular(<span class="hljs-string">"Registrar"</span>,<span class="hljs-string">"user2"</span>,<span class="hljs-string">"pass2"</span>), <span class="hljs-literal">null</span>);
-assert.notEqual(modulo.calcular(<span class="hljs-string">""</span>,<span class="hljs-string">""</span>,<span class="hljs-string">""</span>), <span class="hljs-literal">null</span>);</pre></div></div>
-            
-        </li>
-        
-        
-        <li id="section-3">
-            <div class="annotation">
-              
-              <div class="pilwrap ">
-                <a class="pilcrow" href="#section-3">&#182;</a>
-              </div>
-              <p>Registro de usuario correcta</p>
+describe(<span class="hljs-string">'Tests'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
 
-            </div>
-            
-            <div class="content"><div class='highlight'><pre>assert.equal(modulo.calcular(<span class="hljs-string">"Registrar"</span>,<span class="hljs-string">"user1"</span>,<span class="hljs-string">"pass1"</span>), <span class="hljs-string">"Registro realizado"</span>);</pre></div></div>
-            
-        </li>
-        
-        
-        <li id="section-4">
-            <div class="annotation">
-              
-              <div class="pilwrap ">
-                <a class="pilcrow" href="#section-4">&#182;</a>
-              </div>
-              <p>Se inicia el juego</p>
-
-            </div>
-            
-            <div class="content"><div class='highlight'><pre>assert.equal(modulo.calcular(<span class="hljs-string">"Jugar"</span>,<span class="hljs-string">"user1"</span>,<span class="hljs-string">"pass1"</span>), <span class="hljs-string">"Logueado en el juego"</span>);</pre></div></div>
-            
-        </li>
-        
-        
-        <li id="section-5">
-            <div class="annotation">
-              
-              <div class="pilwrap ">
-                <a class="pilcrow" href="#section-5">&#182;</a>
-              </div>
-              <p>No se permiten registros nulos</p>
-
-            </div>
-            
-            <div class="content"><div class='highlight'><pre>assert.equal(modulo.calcular("Registrar","",""),"No se pueden registrar esos datos");
-
-console.log("Aserciones pasadas con éxito.")
-*/
-
-describe('Tests', function() {
-
-  it('Resultado de la gestión de usuarios no nula', function(done) {
-    assert.notEqual(modulo.calcular("Jugar","user1","pass1"), null);
-    assert.notEqual(modulo.calcular("Registrar","user2","pass2"), null);
-    assert.notEqual(modulo.calcular("","",""), null);
+  it(<span class="hljs-string">'Resultado de la gestión de usuarios no nula'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">done</span>) </span>{
+    assert.notEqual(modulo.calcular(<span class="hljs-string">"Jugar"</span>,<span class="hljs-string">"user1"</span>,<span class="hljs-string">"pass1"</span>), <span class="hljs-literal">null</span>);
+    assert.notEqual(modulo.calcular(<span class="hljs-string">"Registrar"</span>,<span class="hljs-string">"user2"</span>,<span class="hljs-string">"pass2"</span>), <span class="hljs-literal">null</span>);
+    assert.notEqual(modulo.calcular(<span class="hljs-string">""</span>,<span class="hljs-string">""</span>,<span class="hljs-string">""</span>), <span class="hljs-literal">null</span>);
     done();
   });
 
-  it('Registro de usuario correcta', function(done) {
-    assert.equal(modulo.calcular("Registrar","user1","pass1"), "Registro realizado");
+  it(<span class="hljs-string">'Registro de usuario correcta'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">done</span>) </span>{
+    assert.equal(modulo.calcular(<span class="hljs-string">"Registrar"</span>,<span class="hljs-string">"user1"</span>,<span class="hljs-string">"pass1"</span>), <span class="hljs-string">"Registro realizado"</span>);
     done();
   });
 
-  it('Se inicia el juego', function(done) {
-    assert.equal(modulo.calcular("Jugar","user1","pass1"), "Logueado en el juego");
+  it(<span class="hljs-string">'Se inicia el juego'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">done</span>) </span>{
+    assert.equal(modulo.calcular(<span class="hljs-string">"Jugar"</span>,<span class="hljs-string">"user1"</span>,<span class="hljs-string">"pass1"</span>), <span class="hljs-string">"Logueado en el juego"</span>);
     done();
   });
 
-  it('No se permiten registros nulos', function(done) {
-    assert.equal(modulo.calcular("Registrar","",""),"No se pueden registrar esos datos");
+  it(<span class="hljs-string">'No se permiten registros nulos'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">done</span>) </span>{
+    assert.equal(modulo.calcular(<span class="hljs-string">"Registrar"</span>,<span class="hljs-string">""</span>,<span class="hljs-string">""</span>),<span class="hljs-string">"No se pueden registrar esos datos"</span>);
     done();
   });
 });</pre></div></div>
