@@ -1,4 +1,4 @@
-![[Build Status](https://travis-ci.org/luishexen/Submodulo-Red-social-Analytics.svg?branch=master)](https://travis-ci.org/luishexen/Submodulo-Red-social-Analytics)
+[![Build Status](https://travis-ci.org/luishexen/Submodulo-Red-social-Analytics.svg?branch=master)](https://travis-ci.org/luishexen/Submodulo-Red-social-Analytics)
 
 # Submodulo Red social: Analytics y BD de juegos
 
