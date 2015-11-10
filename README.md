@@ -30,3 +30,17 @@ Este submódulo pertenece al proyecto llamado Red social el cuál dispondrá de 
 -[Travis CI](https://travis-ci.org/): Con esta herramienta se encargará de la integración continua.
 
 -[Azure](https://azure.microsoft.com/es-es/): Usaremos Azure para el despliegue en un PaaS/IaaS.
+
+
+## Modo de ejecución y despliegue
+
+Primero ejecutamos el servidor:
+
+```
+node ServidorJuego.js
+```
+Luego abrimos el navegador y ponermos la siguiente URL:
+
+```
+http://localhost:9999/
+```
