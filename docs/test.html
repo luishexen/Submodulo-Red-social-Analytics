@@ -65,10 +65,23 @@
             
             <div class="content"><div class='highlight'><pre><span class="hljs-pi">'use strict'</span>;
 
-<span class="hljs-keyword">var</span> modulo = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./ServidorJuego.js'</span>);
-<span class="hljs-keyword">var</span> assert = <span class="hljs-built_in">require</span>(<span class="hljs-string">"assert"</span>);
+<span class="hljs-keyword">var</span> modulo = <span class="hljs-built_in">require</span>(<span class="hljs-string">'../ServidorJuego.js'</span>);
+<span class="hljs-keyword">var</span> assert = <span class="hljs-built_in">require</span>(<span class="hljs-string">"assert"</span>);</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-2">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-2">&#182;</a>
+              </div>
+              <p>Pruebas unitarias</p>
 
-describe(<span class="hljs-string">'Tests'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>describe(<span class="hljs-string">'Tests'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
 
   it(<span class="hljs-string">'Resultado de la gestión de usuarios no nula'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">done</span>) </span>{
     assert.notEqual(modulo.calcular(<span class="hljs-string">"Jugar"</span>,<span class="hljs-string">"user1"</span>,<span class="hljs-string">"pass1"</span>), <span class="hljs-literal">null</span>);

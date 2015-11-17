@@ -1,8 +1,9 @@
 'use strict';
 
-var modulo = require('./ServidorJuego.js');
+var modulo = require('../ServidorJuego.js');
 var assert = require("assert");
 
+//Pruebas unitarias
 describe('Tests', function() {
 
   it('Resultado de la gestión de usuarios no nula', function(done) {
