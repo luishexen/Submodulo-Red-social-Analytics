@@ -4,7 +4,8 @@
   "description": "Submodulo encargado de la gestion de usuarios y del analisis de datos de estos",
   "main": "ServidorJuego.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "node ServidorJuego.js"
   },
   "repository": {
     "type": "git",
