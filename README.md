@@ -19,6 +19,7 @@ Este submódulo pertenece al proyecto llamado Red social el cuál dispondrá de 
 
 -[Node.js](https://nodejs.org/en/): Con esta herramienta se desarrollará el servidor que gestionará los usuarios y el que realizará el análisis de datos.
 
+
 -[Socket.io](http://socket.io/): Este se utilizará para la comunicación cliente servidor.
 
 -[HTML5](http://www.w3schools.com/html/html5_intro.asp): Lo usaremos para la parte del registro de usuarios de los clientes externos a la red social.
