@@ -34,18 +34,5 @@ Este submódulo pertenece al proyecto llamado Red social el cuál dispondrá de 
 -[Azure](https://azure.microsoft.com/es-es/): Usaremos Azure para el despliegue en un PaaS/IaaS.
 
 
-## Modo de ejecución y despliegue
-
-Primero ejecutamos el servidor:
-
-```
-node ServidorJuego.js
-```
-Luego abrimos el navegador y ponermos la siguiente URL:
-
-```
-http://localhost:9999/
-```
-
 ## Despliegue en PaaS
 La aplicación se despliega en heroku. Se ha elegido esta plataforma porque ofrece varios servicios de forma gratuita además de su facilidad de uso. El archivo de configuración de dicho despliegue es el archivo Procfile. Se puede acceder a la aplicación desde la dirección [http://submodulo-red-social-analytics.herokuapp.com/](http://submodulo-red-social-analytics.herokuapp.com/).
