@@ -37,6 +37,18 @@ Este submódulo pertenece al proyecto llamado Red social el cuál dispondrá de 
 ## Despliegue en PaaS
 La aplicación se despliega en heroku. Se ha elegido esta plataforma porque ofrece varios servicios de forma gratuita además de su facilidad de uso. El archivo de configuración de dicho despliegue es el archivo Procfile. Se puede acceder a la aplicación desde la dirección [http://submodulo-red-social-analytics.herokuapp.com/](http://submodulo-red-social-analytics.herokuapp.com/).
 
+Este Paas soporta el lenguaje que hemos elegido para nuestro desarrollo "Node.js", además de múltiples lenguajes.
+
+Otro motivo para su utilización es la utilización del proceso de despliegue automático a partir de un repositorio, en este caso soportando el cliente Github donde se encuentra el repoitorio de mi proyecto. Configuración de dos pasos. Primero conectamos con nuestro repositorio en Github proporcionandole la dirección, y segundo, habilitando la opción de "Automatic deploys" desde una rama del repositorio, en nuestro caso la rama Master.
+
+foto
+
+La opción **Automatic deploy** hace la conexión entre el repositorio, las herramientas de integración contínua y el PaaS. En el orden indicado se realiza el despliegue automático en el PaaS.
+
+foto
+
+foto
+
 
 ## Instalación
 
