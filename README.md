@@ -39,7 +39,8 @@ La aplicación se despliega en heroku. Se ha elegido esta plataforma porque ofre
 
 Este Paas soporta el lenguaje que hemos elegido para nuestro desarrollo "Node.js", además de múltiples lenguajes.
 
-Otro motivo para su utilización es la utilización del proceso de despliegue automático a partir de un repositorio, en este caso soportando el cliente Github donde se encuentra el repoitorio de mi proyecto. Configuración de dos pasos. Primero conectamos con nuestro repositorio en Github proporcionandole la dirección, y segundo, habilitando la opción de "Automatic deploys" desde una rama del repositorio, en nuestro caso la rama Master.
+
+Otro motivo para su utilización es la utilización del proceso de despliegue automático a partir de un repositorio, en este caso soportando el cliente Github donde se encuentra el repoitorio de mi proyecto. Lo voy a explicar en dos pasos, primero conectamos con nuestro repositorio en Github proporcionandole la dirección, y segundo, habilitando la opción de "Automatic deploys" desde una rama del repositorio, en nuestro caso la rama Master.
 
 foto
 
