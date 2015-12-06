@@ -36,3 +36,20 @@ Este submódulo pertenece al proyecto llamado Red social el cuál dispondrá de 
 
 ## Despliegue en PaaS
 La aplicación se despliega en heroku. Se ha elegido esta plataforma porque ofrece varios servicios de forma gratuita además de su facilidad de uso. El archivo de configuración de dicho despliegue es el archivo Procfile. Se puede acceder a la aplicación desde la dirección [http://submodulo-red-social-analytics.herokuapp.com/](http://submodulo-red-social-analytics.herokuapp.com/).
+
+
+## Instalación
+
+  * Código
+  ```
+  git clone https://github.com/luishexen/Submodulo-Red-social-Analytics.git
+  cd Submodulo-Red-social-Analytics
+  ```
+
+  * Instalación de dependencias
+  `npm install`
+
+  * Ejecución
+  `npm start`
+
+  Y por último usamos este enlace [localhost](http://localhost:5000/)
