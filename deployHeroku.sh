@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#Iniciamos sesión
+sudo heroku login
+
 #Descargamos el repositorio
 echo 'Descargando repositorio...'
 git clone https://github.com/luishexen/Submodulo-Red-social-Analytics.git
