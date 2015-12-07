@@ -44,6 +44,8 @@ Otro motivo para su utilización es la utilización del proceso de despliegue au
 
 ![img](https://dl.dropboxusercontent.com/s/vozd7h6opcy9gzd/CC-Hito3-1.png?dl=0)
 
+En el siguiente enlace se puede ver un ciclo completo de despliegue en heroku de nuestra app:
+
 **[Prueba Despliegue](https://github.com/luishexen/Submodulo-Red-social-Analytics/blob/master/docs/PruebaDespliegue.md)**
 
 
