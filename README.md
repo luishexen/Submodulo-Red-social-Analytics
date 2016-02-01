@@ -64,3 +64,10 @@ En el siguiente enlace se puede ver un ciclo completo de despliegue en heroku de
   `npm start`
 
   Y por último usamos este enlace [localhost](http://localhost:5000/)
+  
+## Docker
+  
+En este [enlace](https://hub.docker.com/r/luishexen/submodulo_red_social_analytics) está la imagen para el despliegue automático del submódulo de la red social. Es necesario utilizar docker para desplegarlo y luego lanzarlo.
+
+Cabe destacar que ha sido sincronizado con este repositorio para actualizarse automáticamente.
+
