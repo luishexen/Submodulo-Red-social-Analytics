@@ -73,3 +73,19 @@ En este [enlace](https://hub.docker.com/r/luishexen/submodulo-red-social-analyti
 
 Cabe destacar que ha sido sincronizado con este repositorio para actualizarse automáticamente.
 
+Para poner todo el contenedor en funcionamiento en cualquier máquina con Ubuntu se tendrán que realizar los siguientes pasos:
+
+```
+docker pull luishexen/submodulo-red-social-analytics
+docker run -i -t -p 5000:5000 luishexen/submodulo-red-social-analytics /bin/bash
+```
+Con lo anterior ya tendremos el contenedor en nuestro ordenador y ejecutándose, ahora solo tenemos que iniciar el servidor de la aplicación web:
+
+```
+cd home/submodulo-red-social-analytics/
+npm start
+```
+
+Con lo anterior ya tendremos el programa escuchando en el puerto 5000. A continuación si queremos acceder a nuestra aplicación que se está ejecutandose en la máquina solo tenemos que ejecutar el comando 'ifconfig' (En la consola del ordenador que alberga docker) y poner esa IP y el puerto 5000
+
+En mi caso [http://172.17.42.1:5000/](http://172.17.42.1:5000/). La IP puede cambiar entre diferentes máquinas.
