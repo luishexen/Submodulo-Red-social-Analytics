@@ -82,7 +82,7 @@ docker run -i -t -p 5000:5000 luishexen/submodulo-red-social-analytics /bin/bash
 Con lo anterior ya tendremos el contenedor en nuestro ordenador y ejecutándose, ahora solo tenemos que iniciar el servidor de la aplicación web:
 
 ```
-cd home/submodulo-red-social-analytics/
+cd home/Submodulo-Red-social-Analytics/
 npm start
 ```
 
